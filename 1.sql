@@ -6,7 +6,7 @@ SELECT * FROM Products WHERE UnitsInStock < 250
 -- 3. รหัสสินคา ชื่อสินค้าที่เลิกจำหน่ายแล้ว
 SELECT * FROM Products WHERE Discontinued = 1
 -- 4. รหัสสินค้า ชื่อสินค้า ราคา ของสินค้าที่มีราคามากกว่า 100
-SELECT * FROM Products WHERE UnitPrice > 100
+SELECT ProductID,ProductName,UnitPrice FROM Products WHERE UnitPrice > 100
 -- 5. รหัสสินค้า และราคาของยางลบ
 SELECT * FROM Products WHERE ProductName = 'ยางลบ'
 -- 6. หมายเลขใบเสร็จ วันที่ และ ราคารวม ของใบเสร็จที่ออกก่อนวันที่ 15 ก.พ.
