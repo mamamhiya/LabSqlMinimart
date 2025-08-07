@@ -12,7 +12,7 @@ SELECT * FROM Products WHERE ProductName = 'ยางลบ'
 -- 6. หมายเลขใบเสร็จ วันที่ และ ราคารวม ของใบเสร็จที่ออกก่อนวันที่ 15 ก.พ.
 SELECT * FROM Receipts WHERE ReceiptDate < '2023-02-15'
 -- 7. รหัสสินค้า ชื่อสินค้า ที่มีจำนวนคงเหลือตั้งแต่ 400 ขึ้นไป
-SELECT * FROM Products WHERE UnitsInStock >= 400
+SELECT productID,ProductName FROM Products WHERE UnitsInStock >= 400
 -- 8. รหัสสินค้า ชื่อสินค้า ราคา และ จำนวนคงเหลือ ของแชมพู,แป้งเด็ก,ดินสอ,ยางลบ
 SELECT productID,ProductName,UnitPrice,UnitsInStock from Products WHERE ProductName IN ('แชมพู','แป้งเด็ก','ดินสอ','ยางลบ') 
 -- 9. รายละเอียดของสินค้าประเภทเครื่องเขียน
