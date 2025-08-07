@@ -18,7 +18,7 @@ SELECT productID,ProductName,UnitPrice,UnitsInStock from Products WHERE ProductN
 -- 9. รายละเอียดของสินค้าประเภทเครื่องเขียน
 SELECT * from Categories WHERE CategoryName = 'เครื่องเขียน'
 -- 10. รหัสประเภทสินค้า ชื่อประเภท และรายละเอียดของ สินค้าประเภทเครื่องสำอาง
-SELECT CategoryID,CategoryName,[Description] from Categories
+SELECT CategoryID,CategoryName,Description from Categories
 -- 11.คำนำหน้า ชื่อ นามสกุล ของพนักงานที่เป็น Sale Representative
 SELECT Title,FirstName,LastName from Employees where position = 'Sale Representative'
 -- 12. รหัสพนักงาน ชื่อพนักงาน ชื่อผู้ใช้ รหัสผ่าน ของพนักงานทุกคน
